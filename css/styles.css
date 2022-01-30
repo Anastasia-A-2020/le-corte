@@ -1,4 +1,3 @@
-
 /* HEADER */
 
 .header{
@@ -84,12 +83,11 @@
   background-image: url(../images/bgc.jpg);
   background-repeat: no-repeat;
   object-fit: none;
-  /* background-size: contain; */
   background-position: center;
 }
 
 .buttons-list{
-  transform: translateY(640px);
+  transform: translateY(600px);
 }
 
 .buttons-list .item{
@@ -146,7 +144,17 @@
 /* NOVELTY */
 
 .novelty{
+  padding-top: 80px;
+  padding-bottom: 80px;
+
   background-color: var(--bg-color);
+}
+
+.novelty .container{
+  display: flex;
+
+  border-top: 1px solid var(--accent-color);
+  border-bottom: 1px solid var(--accent-color);
 }
 
 .novelty .text,
@@ -155,6 +163,7 @@
 }
 
 .novelty .text{
+  margin-bottom: 30px;
   font-size: 14px;
 }
 
@@ -164,14 +173,36 @@
   font-size: 36px;
 }
 
-.table{
+.novelty .subtitle::after{
+  content: "";
+  display: block;
+  border-bottom: 1px solid #282828;
+  width: 160px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.table{  
+  margin-bottom: 30px;
+
   font-size: 14px;
   font-weight: 400;
-  border: 2px solid transparent;
+  border: 3px solid transparent;
   border-collapse: collapse;
 }
 
-.table th{
+.table th,
+.table td{
+  border: 1px solid #282828;
+  padding-left: 30px;
+
+  text-align: start;
+}
+
+.table th{  
+  border-bottom: 1px solid transparent;
+  padding-top: 10px;
+
   font-family: "Playfair Display";
   font-weight: 700;
   font-size: 18px;
@@ -193,13 +224,25 @@
   font-size: 18px;
 }
 
-.table th,
-.table td{
-  border: 1px solid #282828;
+.table-text{
+  padding-bottom: 15px;
 }
 
-.novelty .btn{
-  color:var(--primery-text-color);
+.images-list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: 125px;
+  font-size: 0;
+}
+
+.images-list img{
+  display: block;
+}
+
+.images-list .item:first-child{
+  margin-bottom: 30px;
+  height: 500px;
 }
 
 /* REGISTRATION */
