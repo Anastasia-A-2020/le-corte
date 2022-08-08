@@ -379,7 +379,7 @@
 
 
 .footer-item{
-  flex-basis:calc(100%/4);
+  flex-basis:calc(100%/3);
   border-bottom:1px solid #FFFFFF;
 }
 
